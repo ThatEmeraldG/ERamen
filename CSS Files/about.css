@@ -1,0 +1,82 @@
+.section{
+    min-height: 50vh;
+    height: fit-content;
+}
+
+.container{
+    margin-left: 5rem;
+    margin-right: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.aboutUs{
+    margin: 0;
+    padding: 0;
+}
+
+.logoHeader{
+    height: 250px;
+    width: 300px;
+    object-fit: cover;
+    object-position: 25% 25%;
+}
+
+.slogan{
+    font-size: clamp(1rem, 4vw, 1.75rem);
+    font-weight: 600;
+    margin-top: -1rem;
+    margin-bottom: 2rem;
+    white-space: nowrap;
+}
+
+h2{
+    font-size: clamp(1rem, 4vw, 1.75rem);
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.aboutUs{
+    font-weight: 800;
+    font-size: clamp(2rem, 5vw, 4rem);
+}
+
+.white{
+    background-color: white;
+}
+
+.red{
+    background-color: #A71831;
+}
+
+.history{
+    color: white;
+}
+
+.hrline{
+    display: inline-block;
+    width: 95%;
+    max-width: 900px;
+    height: 2px;
+    background-color:white;
+}
+
+.details{
+    min-width: 330px;
+    width: 100%;
+    max-width: 1000px;
+    line-height: 1.75rem;
+    font-family: 'Inter';
+    font-weight: normal;
+    font-size: clamp(.75rem, 2vw, 1rem);
+}
+
+.thankyou{
+    font-style: italic;
+    font-family: 'Poppins';
+    font-size: clamp(1rem, 3vw, 1.25rem);
+    margin-bottom: 1.25rem;
+}

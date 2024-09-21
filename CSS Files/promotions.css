@@ -1,0 +1,74 @@
+html{
+    background-color: #FFB448;
+}
+
+.box {
+    width: 90%;
+    margin: 1rem auto;
+    background-color: white;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.banner{
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+}
+
+.title{
+    margin: 0;
+    font-size: clamp(1.5rem, 5vw, 3rem);
+}
+
+.partnersTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    font-size: clamp(1.5rem, 5vw, 3rem);
+    color: #6A040F;
+}
+
+.brands{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+}
+
+.shopeePay{
+    width: 160px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.brands img:not(.shopeePay){
+    min-height: 100%;
+    height: 70px;
+}
+
+.ovo{
+    border-radius: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .partnersTitle{
+        margin: 0;
+    }
+    .brands{
+        scale: .75;
+        transition: 0.3s all ease-in-out;
+    }
+}
