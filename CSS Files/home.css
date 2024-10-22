@@ -13,6 +13,8 @@ em{
     position: relative;
     min-height: 50vh;
     height: fit-content;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 }
 
 .white{
