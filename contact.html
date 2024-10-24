@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/ea57a11c1b.js" crossorigin="anonymous"></script>
+    <!-- Google Fonts and CSS links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=PT+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS Files/contact.css" type="text/css">
+    <link rel="stylesheet" href="../CSS Files/navbar.css" type="text/css">
+    <title>Contact Us | ERamen</title>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar" id="nav">
+    <div class="navbarContainer">
+      <div class="navLogo" id="navbarLogo">
+        <button onclick="location.href='./index.html'">
+        <img class="logo" src="../asset/Nav Logo.png" alt="logo">
+        </button>
+      </div>
+      <!-- hamburger logo -->
+      <div class="hamburgMenu" id="mobileMenu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="navbarMenu">
+        <li class="navbarItem">
+          <a href="./index.html" class="navbarLinks">Home</a>
+        </li>
+        <li class="navbarItem">
+          <a href="./products.html" class="navbarLinks">Products</a>
+        </li>
+        <li class="navbarItem">
+          <a href="./promotions.html" class="navbarLinks">Promotions</a>
+        </li>
+        <li class="navbarItem">
+            <a href="./about.html" class="navbarLinks">About Us</a>
+          </li>
+        <li class="navbarItem">
+          <a href="./contact.html" class="navbarLinks selectedPage">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="center">
+  <div class="formContainer">
+    <h1 class="contactUs">Contact Us</h1>
+    <form class="form" method="get" action="" onsubmit="return(validation())">
+    <div class="form-row">
+        <h2 class="form-title">Full Name</h2>
+        <input type="text" id="nameInput" class="form-input" placeholder="John Doe">
+    </div>
+    <div class="form-row">
+        <h2 class="form-title">Phone Number</h2>
+        <input type="number" id="phoneInput" class="form-input" placeholder="####-####-####">
+    </div>
+    <div class="form-row">
+        <h2 class="form-title">Email</h2>
+        <input type="email" id="emailInput" class="form-input" placeholder="example@gmail.com">
+    </div>
+    <div class="form-row">
+      <h2 class="form-title">Preferences</h2>
+      <div class="ramenList">
+      <select class="selectPreferences" type="text" id="ramenOptions">
+          <option id="noInput"></option>
+          <option value="Ramen">Ramen</option>
+          <option value="Dry Ramen">Dry Ramen</option>
+          <option value="Tempura Ramen">Tempura Ramen</option>
+      </select>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <h2 class="messages">Message</h2>
+      <textarea class="message" rows="8" cols="25">Send your message here!</textarea>
+    </div>
+    <div class="form-row"><input type="checkbox" name="agreement" id="agreement"> Agree to receive newsletter (required)
+    </div>
+    <button type="submit" class="sendBtn">
+        <a href="./index.html">Send</a>
+    </button>
+    </form>
+  </div>
+  </div>
+  
+  <div class="red">
+    <div class="container">
+      <div class="col">
+        <div>
+        <h2 class="infoTitle">More Ways to Contact Us</h2>
+        <div class="moreContact">
+            <i class="fa-solid fa-envelope fa-2xl" style="color:white"></i>
+            <span>contact.eramen@gmail.com</span>
+        </div>
+        <div class="moreContact">
+            <i class="fa-brands fa-whatsapp fa-2xl" style="color:white"></i>
+            <span>+62 81286933612</span>
+        </div>
+        </div>
+        
+        <div>
+        <h2 class="infoTitle">Business Hours</h2>
+        <div class="openClose">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><path fill="white" d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/></svg>
+            <span>Open Mon-Sat (9 AM - 10 PM)</span>
+        </div>
+        <div class="openClose">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><path fill="white" d="m23 21.74l-1.46-1.46L7.21 5.95L3.25 1.99L1.99 3.25l2.7 2.7h-.64c-1.11 0-1.99.89-1.99 2l-.01 11c0 1.11.89 2 2 2h15.64L21.74 23L23 21.74zM22 7.95c.05-1.11-.84-2-1.95-1.95h-4V3.95c0-1.11-.89-2-2-1.95h-4c-1.11-.05-2 .84-2 1.95v.32l13.95 14V7.95zM14.05 6H10V3.95h4.05V6z"/></svg>
+            <span>Closed on Sundays</span>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <section class="footerContainer">
+      <div class="columns">
+        <img class="footerLogo" src="../asset/Footer Logo.png" alt="logo">
+      </div>
+      <div class="columns">
+        <div class="footerCategory">Our Company</div>
+        <div class="footerDetails">
+          <li><a href="./about.html">About Us</a></li>
+          <li><a href="./contact.html">Contact Us</a></li>
+          <li><a href="#nav">Sitemap</a></li>
+          <li><a href="#">Privacy & Policy</a></li>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="footerCategory">Products</div>
+        <div class="footerDetails">
+          <li><a href="#">Ramen</a></li>
+          <li><a href="#">Dry Ramen / Soba</a></li>
+          <li><a href="#">Tempura</a></li>
+          <li><a href="#">Appetizers</a></li>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="footerCategory">Visit Us</div>
+        <div class="visitUs">
+          <div class="location">
+            <i class="fa-solid fa-location-dot fa-lg" style="color: #ffffff;"></i>
+            <span>Little Tokyo, Jakarta 12160, Indonesia</span>
+          </div>
+          <div class="location">
+            <i class="fa-solid fa-location-dot fa-lg" style="color: #ffffff;"></i>
+            <span>Fukuoka, Fukuoka Prefecture, Japan</span>
+          </div>
+        </div>
+        <div class="footerCategory">Follow Us</div>
+        <div class="socials">
+            <i class="fa-brands fa-facebook fa-lg" style="color: #ffffff;"></i>
+            <i class="fa-brands fa-instagram fa-lg" style="color: #ffffff;"></i>
+            <i class="fa-brands fa-twitter fa-lg" style="color: #ffffff;"></i>
+            <i class="fa-brands fa-youtube fa-lg" style="color: #ffffff;"></i>
+        </div>
+      </div>
+    </section>
+   
+    <p class="copyright">© 2023 ERamen. All rights reserved.</p>
+  </footer>
+  <script src="../JS Files/navscript.js"></script>
+  <script src="../JS Files/validation.js"></script>
+</body>
+</html>
